@@ -1,13 +1,50 @@
-<!DOCTYPE html>
-
 <html>
-	<head>
-		<link rel="stylesheet" href="main.css">
-		<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Quattrocento" rel="stylesheet">
-		<meta http-equiv="cache-control" content="no-cache">
+<head>
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Quattrocento" rel="stylesheet">
+	<meta http-equiv="cache-control" content="no-cache">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Quattrocento", sans-serif;
+}
 
-	</head>
-	<body>
+.sidenav {
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: rgba(0, 0, 0,0.8);
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #ffffff;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: rgba(160, 25, 25, 1);
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
 
 <div class="sidenav">
   <a href="{{site.baseurl}}/index">Home</a>
@@ -19,15 +56,10 @@
 
 <!-- Page content -->
 <div class="main">
-  ...
-</div>
 
 		<br>
 		{{ content }}
 		<br>
-
-		<footer>
-		</footer>
 
 	</body>
 </html>
