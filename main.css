@@ -1,0 +1,201 @@
+
+* {
+	box-sizing: border-box;
+	#border: 1px solid;
+}
+
+body {
+	background-color: #f0f0f0;
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial';
+	min-height: 600px;
+	#min-width: 800px;
+}
+
+header {
+	position:fixed;
+	width: 100%;
+	height: 25px;
+	background-color: black;
+	top: 0px;
+	z-index: 3;
+}
+
+footer {
+	background-color: black;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	z-index: 3;
+}
+
+.select li{
+	width: 250px;
+	height: 250px;
+	display: inline-block;
+	border-radius: 10px;
+	font-family: 'Julius Sans One', sans-serif;
+	color: white;
+	#margin: 10% 15px;
+	padding-top: 7%;
+	background-color: rgba(0, 0, 0,0.8);
+	font-weight: bold;
+	font-size: 20px;
+	overflow: hidden;
+}
+
+li#unavailable {
+	background-color: rgba(160, 25, 25, 1);
+}
+
+#unavailable .tooltiptext {
+	color: rgba(160, 25, 25, 1);
+	background-color: #f0f0f0;
+}
+
+li#full {
+	background-color: rgba(180, 75, 0, 0.8);
+}
+
+.select li:hover {
+	background-color: rgba(0, 0, 0,0.5);
+}
+
+
+.box {
+	text-align: center;
+	max-width: 60%;
+	margin: auto;
+	padding: 0;
+}
+
+h1.greet {
+	text-align: center; 
+	font-size: 70px; 
+	margin-bottom: 30px;
+	color: black;
+	font-family: 'Quattrocento', serif;
+	text-shadow: 3px 2px gray;
+}
+
+.usual h1 {
+	text-align: center; 
+	font-size: 2.5em; 
+	margin-bottom: 30px;
+	color: black;
+	font-family: 'Julius Sans One', sans-serif;
+	font-weight: strong;
+	text-shadow: 2px 2px gray;
+}
+
+.usual p,
+.usual ul {
+	text-align: center;
+	font-family: 'Quattrocento', serif;
+	margin-bottom: 80px;
+	font-size: 22px;
+}
+
+.usual ul {
+	padding: 0;
+	margin: 0;
+}
+
+.usual a {
+	color: rgba(180, 25, 25, 1);
+}
+
+.link {
+	color: rgb(100, 80, 30);
+}
+
+.link:hover {
+	color: rgba(100, 80, 30,0.5);
+}
+
+.nav li{
+	display: inline-block;
+	margin: 0px 10px;
+	padding: auto;
+}
+
+ul.nav {
+	color: white;
+	#text-transform: uppercase;
+	font-family: 'Julius Sans One', sans-serif;
+	font-weight: bold;
+	position: relative;
+	bottom: 50%;
+}
+
+.nav a:hover {
+	color: gray;
+}
+
+.ftlogo {
+	margin: 5px auto;
+}
+
+.newscontainer {
+	max-width: 100%;
+	height: 300px;
+	position: relative;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+#newshead {
+	position:relative;
+	display: default;
+	padding-left: 20px;
+	margin: 4% auto auto auto;
+#	border-bottom: 1px solid;
+	font-family: 'Quattrocento', serif;
+	font-size: 30px;
+}
+
+#pft {
+	color: white;
+	font-family: 'Julius Sans One', sans-serif;
+	#display: inline-block;
+	height: 100%;
+	position: relative;
+	margin: 7px auto auto auto;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 230px;
+    background-color: #f0f0f0;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 20px;
+    position: absolute;
+	top: 60%;
+	left: -3%;
+    z-index: 1;
+}
+
+.tooltiptext {
+	font-size: 15px;
+	
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* coded by falcon alpha */

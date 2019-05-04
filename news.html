@@ -1,0 +1,28 @@
+---
+layout: alpha
+permalink: /updates
+---
+
+<title>Updates - ProjEX</title>
+
+<style>
+#newspage {
+	background-color: rgba(0,0,0,0.1); 
+	display: inline-block; 
+	width: 100%; 
+	margin: 10px auto; 
+	max-height: 300px; 
+	min-height: 300px;
+	padding: 10px;
+	overflow: scroll;}
+</style>
+
+	
+
+	{% for post in site.posts %}
+	<div class="usual" id="newspage">
+	<h1 style="font-size: 25px;">{{post.title}} ({{ post.date | date_to_long_string }}) </h1>
+	
+	<p style="margin: 5px auto;">{{post.content}}
+	</div>
+	{% endfor %}

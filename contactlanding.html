@@ -1,0 +1,74 @@
+---
+layout: alpha
+permalink: /contactlanding
+---
+<style>
+
+#var1 li {
+	font-size: 30px;
+	margin: 10% 15px;
+	width: 300px;
+	height: 300px;
+}
+
+#var1 {
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 280px;
+    background-color: #f0f0f0;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 20px;
+    position: absolute;
+	top: 60%;
+	left: -2%;
+    z-index: 1;
+}
+
+.tooltiptext {
+	font-size: 15px;
+	
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+</style>
+
+	<title>Contact Page - ProjEX</title>
+
+		<ul class="select box" style="list-style: none" id="var1">
+			
+			<a href="{{site.baseurl}}/contact">
+			<li class="tooltip">
+			Contact Us
+			<span class="tooltiptext">Use this if you need to contact us.</span>
+			</li></a>
+			
+	<!--	<a href="#"> -->
+			<li class="tooltip" id="unavailable">
+			Apply <br> membership<br> (Closed)
+			<span class="tooltiptext">Use this if you would like to offer a service for ProjEX.</span>
+			</li></a>
+			
+			<a href="{{site.baseurl}}/complaint">
+			<li class="tooltip">
+			Submit<br> a complaint
+			<span class="tooltiptext">Use this if you would like to send us a complaint.</span>
+			</li></a>
+
+		</ul>
+		
+		
+		
+		
+		
