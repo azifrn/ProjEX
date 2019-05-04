@@ -18,7 +18,9 @@ email: azifrn@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: /ProjEX
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  azifrm
+github_username:  azifrn
+future: true
+timezone: GMT+8
 
 # Build settings
 markdown: kramdown
